@@ -1,0 +1,8 @@
+Version 7.0:
+Fix Cr fact crashing the bot.
+Improved poll creation.
+Add registered member to the whitelist (For tpt unofficial server)
+Update plugins
+
+
+

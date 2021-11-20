@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Redirecting to TPT Save...</title>
+  </head>
+  <body>
+    <p>
+      Please wait while you are redirected to TPT Save
+    </p>
+    
+    <p>
+      You can close this window when done.
+    </p>
+    
+    <script>
+      let id = window.location.href.split('?=')[1];
+      if (id && id.match(/[0-9]+/))
+        window.location.href = 'ptsave:' + id;
+    </script>
+  </body>
+</html>
