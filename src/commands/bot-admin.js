@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 module.exports = [
 // below 3 commands are for taking notes. Stored in info.txt.
 // Cr n writes, c wipes and g retrieves the text.
+
  new Command(
         (msg, bot, args) => {
            const notetaken = new Discord.MessageEmbed()
@@ -109,6 +110,15 @@ const nickc= new Discord.MessageEmbed()
         }, 'say', 'makes bot say something [perm req].', 'bot', 100
     ),
 
+  new Command(
+        (msg, bot, args) => {
+           const content = args.join(' ');
+              const ping23 = new Discord.MessageEmbed()
+                .setColor('#FDD017')
+                .setDescription(content); 
+           msg.channel.send(ping23);
+        }, 'saym', 'makes bot say something in a rich embed [perm req].', 'bot', 100
+    ),
     new Command(
         async (message, bot, args) => {
             // Get the delete count, as an actual number.

@@ -37,11 +37,11 @@ module.exports = [
         (msg, bot,args) => {
           let findrole = args.slice(0).join(' ');
           const Role = msg.guild.roles.cache.find(role => role.name == findrole);
-        const Members = msg.guild.members.cache.filter(member => member.roles.cache.find(role => role == Role)).map(member => member.user.tag);
+        const Members = msg.guild.members.cache.filter(member => member.roles.cache.find(role => role == Role)).map(member => member.user.tag).join('\n');
 
   const rolefinder = new Discord.MessageEmbed()
                 .setColor('#FDD017')
-                .setTitle("The users having " +findrole+ " role are:")
+                .setTitle("List of users having the " +findrole+ " role:")
                 .setDescription(`${Members}`);
         msg.channel.send(rolefinder);
         }
@@ -54,7 +54,7 @@ module.exports = [
                 .setColor('#FDD017')
                 .setTitle(':bell:  Poll by' + ` ${msg.author.username}` + " :bell:")
                 .setTimestamp()
-                .setDescription("Title: " + title+"\n\nVote by using the given reactions: \nThumbs up : Yes \nThumbs down : No\n Thinking Face: Can't decide");
+                .setDescription("Title: " + title+"\n\nVote by using the given reactions: \nThumbs up : Yes \nThumbs down : No\nThinking Face: Can't decide");
            msg.channel.send({embed: poll}).then(embedMessage => {
     embedMessage.react("👍")
     embedMessage.react("🤔")

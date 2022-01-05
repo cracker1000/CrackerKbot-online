@@ -1,8 +1,16 @@
 Version 7.0:
 Fix Cr fact crashing the bot.
-Improved poll creation.
-Add registered member to the whitelist (For tpt unofficial server)
-Update plugins
+Add Registered member role to whitelist
+Cr find <Role> lists all the members in an organised way
+Improved poll creation
+Internal fixes and update all the packages to latest version
+Changes to save previews:
+Previews/ cards now show total votes along with upvotes and downvotes
+Mentions Save author separately
+Adds a new reaction below the preview (Not related to votes!)
+
+
+
 
 
 

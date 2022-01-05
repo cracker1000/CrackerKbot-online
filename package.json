@@ -10,14 +10,15 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@vitalets/google-translate-api": "^5.0.0",
+    "@vitalets/google-translate-api": "^5.1.0",
     "custom-translate": "^2.2.8",
-    "discord.js": "^12.5.1",
-    "express": "^4.17.1",
-    "got": "^11.8.1",
+    "discord.js": "^12.5.3",
+    "discordjs-facts": "^1.0.1",
+    "express": "^4.17.2",
+    "got": "^11.8.3",
     "he": "^1.2.0",
     "moment": "^2.29.1",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.6",
     "relevant-urban": "^2.0.0",
     "request": "^2.88.2"
   },
